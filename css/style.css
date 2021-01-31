@@ -1,0 +1,294 @@
+:root {
+  --text: #32325f;
+  --text-i: #fff;
+  --link: #95989a;
+  --link-h: #525f7f;
+  --link-i: #fff;
+  --link-ih: #f36;
+  --btn-success: #2dce89;
+  --btn-primary: #5e72e4;
+}
+
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+
+.text-i {
+  color: var(--text-i);
+}
+
+body {
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 6px rgba(173, 173, 173, 0.2);
+  border-radius: 6px;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-weight: 700;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: background;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.btn-success {
+  background-color: var(--btn-success);
+}
+.btn-success:hover {
+  box-shadow: inset 0 0 0 2px var(--btn-success), 0 0 1px rgba(0, 0, 0, 0);
+  color: var(--btn-success);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary);
+}
+.btn-primary:hover {
+  box-shadow: inset 0 0 0 2px var(--btn-primary), 0 0 1px rgba(0, 0, 0, 0);
+  color: var(--btn-primary);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+}
+
+a:hover(:not([class="btn"])),
+a.active(:not([class="btn"])) {
+  color: var(--link-h);
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor;
+}
+
+a[href^="http://"],
+a[href^="https://"],
+a[href^="//"](:not([class="btn"]))
+{
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+}
+
+a[href^="tel:"],
+a[href^="mailto:"],
+.tel,
+.mailto {
+  border-bottom: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover,
+.tel:hover,
+.mailto:hover {
+  border-bottom: 0;
+}
+
+header a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+header a:hover,
+header a.active {
+  color: var(--link-h);
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+header a[href^="http://"],
+header a[href^="https://"],
+header a[href^="//"]
+{
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+header a[href^="tel:"]:hover,
+header a[href^="mailto:"]:hover,
+.tel:hover,
+.mailto:hover {
+  border-bottom: 0;
+}
+
+.link-i {
+  color: var(--link-i);
+}
+
+.link-i:hover {
+  color: var(--link-ih);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a:focus,
+.btn:focus,
+input:focus,
+button:focus,
+select:focus,
+a:active,
+.btn:active,
+input:active,
+button:active,
+select:active {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (min-width: 1200px) {
+  .py-xl-6 {
+    padding: 5rem 0 !important;
+  }
+  .mt-xl-6 {
+    margin-top: 5rem !important;
+  }
+  .mb-xl-6 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-xl-6 {
+    margin-bottom: 5rem !important;
+  }
+}
+
+.mt-6 {
+  margin-top: 5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 5rem !important;
+}
+
+a,
+button {
+  transition: 0.25s;
+}
+
+section:nth-child(even) {
+  background-color: #f4f5f7;
+}
+
+header {
+  background-color: #f4f5f7;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h1 span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: block;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: block;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header .fa-lg {
+  font-size: 24px;
+}
+
+.header_social-icon:not(:last-child) {
+  margin-right: 20px;
+}
+
+p.sub-heading {
+  font-size: 1.25rem;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  max-width: 547px;
+}
+
+p.main_price-text {
+  font-size: 3rem;
+  color: #525f7f;
+  margin-bottom: 40px;
+}
+
+p.main_price-text span {
+  font-size: 1.25rem;
+  display: block;
+  color: var(--text);
+}
+
+section#byers img {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: var(--text);
+}
+
+.footer_data,
+.footer-info,
+.footer-contacts {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+footer a[href^="mailto:"] {
+  color: var(--link-ih);
+}
+
+footer a[href^="mailto:"]:hover {
+  color: var(--link-i);
+}
+
+header a[href*="vk"]:hover {
+  color: #2787f5;
+}
+header a[href*="youtube"]:hover {
+  color: #ff0000;
+}
+header a[href*="instagram"]:hover {
+  color: #cc2366;
+}
